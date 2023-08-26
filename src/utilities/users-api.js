@@ -17,11 +17,7 @@ export async function signUp(userData) {
   //   });
 
   // AXIOS
-  const res = await axios.post(BASE_URL, userData, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const res = await axios.post(BASE_URL, userData);
 
   // Check if request was successful
   if (res.status === 200) {
