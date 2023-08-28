@@ -60,21 +60,21 @@ export default function SignUpForm() {
   )
 }
 
-// import { Component } from "react";
+// import { Component } from 'react';
 
 // export default class SignUpForm extends Component {
 //   state = {
-//     name: "",
-//     email: "",
-//     password: "",
-//     confirm: "",
-//     error: "",
+//     name: '',
+//     email: '',
+//     password: '',
+//     confirm: '',
+//     error: '',
 //   };
 
 //   handleChange = (evt) => {
 //     this.setState({
 //       [evt.target.name]: evt.target.value,
-//       error: "",
+//       error: '',
 //     });
 //   };
 
@@ -83,17 +83,17 @@ export default function SignUpForm() {
 //     try {
 //       // We don't want to send the 'error' or 'confirm' property,
 //       // so let's make a copy of the state object, then delete them
-//       const newFormData = {...this.state.formData};
-//       delete newFormData.error;
-//       delete newFormData.confirm;
+//       // const newFormData = {...this.state.formData};
+//       // delete newFormData.error;
+//       // delete newFormData.confirm;
 //       // or
-//       // const {name, email, password} = formData
+//       const { name, email, password } = formData;
 
 //       const user = await signUp(newFormData);
 //       console.log(user);
 //     } catch (err) {
 //       // An error occurred
-//       this.setState({ error: "Sign Up Failed - Try Again" });
+//       this.setState({...this.state.formData, error: 'Sign Up Failed - Try Again' });
 //     }
 //   };
 
@@ -101,46 +101,46 @@ export default function SignUpForm() {
 //     const disable = this.state.password !== this.state.confirm;
 //     return (
 //       <div>
-//         <div className="form-container">
-//           <form autoComplete="off" onSubmit={this.handleSubmit}>
+//         <div className='form-container'>
+//           <form autoComplete='off' onSubmit={this.handleSubmit}>
 //             <label>Name</label>
 //             <input
-//               type="text"
-//               name="name"
+//               type='text'
+//               name='name'
 //               value={this.state.name}
 //               onChange={this.handleChange}
 //               required
 //             />
 //             <label>Email</label>
 //             <input
-//               type="email"
-//               name="email"
+//               type='email'
+//               name='email'
 //               value={this.state.email}
 //               onChange={this.handleChange}
 //               required
 //             />
 //             <label>Password</label>
 //             <input
-//               type="password"
-//               name="password"
+//               type='password'
+//               name='password'
 //               value={this.state.password}
 //               onChange={this.handleChange}
 //               required
 //             />
 //             <label>Confirm</label>
 //             <input
-//               type="password"
-//               name="confirm"
+//               type='password'
+//               name='confirm'
 //               value={this.state.confirm}
 //               onChange={this.handleChange}
 //               required
 //             />
-//             <button type="submit" disabled={disable}>
+//             <button type='submit' disabled={disable}>
 //               SIGN UP
 //             </button>
 //           </form>
 //         </div>
-//         <p className="error-message">&nbsp;{this.state.error}</p>
+//         <p className='error-message'>&nbsp;{this.state.error}</p>
 //       </div>
 //     );
 //   }
